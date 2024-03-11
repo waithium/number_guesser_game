@@ -1,0 +1,21 @@
+# number guesser game
+import random
+
+# ans = random.randint(0,11)
+ans = 23
+num = ''
+tries = 0
+
+while num != ans:
+    if tries < 3:
+        num = input('please enter your answer (0-10): ')
+        if ans == num:
+            print('congrats you won!!')
+            exit()
+        else:
+            print('try again!!')
+            tries += 1
+    else:
+        print('sorry bro, ran out of tries :(')
+        exit()
+        
